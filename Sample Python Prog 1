@@ -1,0 +1,30 @@
+# Draw a Frieze
+from turtle import *
+
+
+for number_of_elements in range (4):
+
+    # Draw left side of base spoke
+    forward(50)
+
+    # Draw all the centre spokes
+    
+    for spokes in range (1, 5):
+        
+    # Draw one centre spoke - 180 degree about-turn plus 36 degrees
+        right(216)
+        forward(50)
+
+    # Return to centre point on baseline
+        right(180)
+        forward(50)
+
+    # Draw remainder of baseline
+
+    right(216)
+    forward(50)
+
+    # Move to start of next frieze
+    penup()
+    forward(25)
+    pendown()
