@@ -114,12 +114,7 @@ for row in data:
         highest_expenditure = exp
 
     expenditure.append(exp)
-    print('low_exp_month', low_exp_month)
-    print('lowest_expenditure', lowest_expenditure)
-    print('high_exp_month', high_exp_month)
-    print('highest_expenditure', highest_expenditure)
-    print('expenditure', expenditure)
-
+    
 
 def graph_headings():
     # Final Graph Heading and any calculated values ie. anything that goes on the graph that isn't the graph bars
@@ -163,8 +158,6 @@ def graph_headings():
 # Calculated Values used on the Graph within function graph_headings
 total_sales = sum(sales)
 total_expenditure = sum(expenditure)
-print('total_expenditure', total_expenditure)
-print('low_exp_mth', low_exp_month)
 yearly_profit = total_sales - total_expenditure
 
 average_sales = total_sales // 12
